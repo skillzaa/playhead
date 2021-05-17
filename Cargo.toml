@@ -1,0 +1,13 @@
+[package]
+name = "playhead"
+version = "0.1.0"
+authors = ["bilal <skillzaa.com@gmail.com>"]
+edition = "2018"
+description = "This is a small library that implements the time counter functionality of a music player. Once we have created the play_head we can play, pause,stop etc. At any given time we get the current time using time fn"
+repository = "https://github.com/skillzaa/play_head"
+homepage = "https://github.com/skillzaa/play_head"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

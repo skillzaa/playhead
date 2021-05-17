@@ -1,0 +1,1 @@
+- This is a small library that implements the time counter functionality of a music player. Once we have created the play_head we can play, pause,stop etc. At any given time we get the current time using time fn
