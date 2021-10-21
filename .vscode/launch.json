@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'playhead'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=playhead"
+                ],
+                "filter": {
+                    "name": "playhead",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'many_fn'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=many_fn",
+                    "--package=playhead"
+                ],
+                "filter": {
+                    "name": "many_fn",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'simple_seq'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=simple_seq",
+                    "--package=playhead"
+                ],
+                "filter": {
+                    "name": "simple_seq",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'phtest'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=phtest",
+                    "--package=playhead"
+                ],
+                "filter": {
+                    "name": "phtest",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

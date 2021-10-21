@@ -1,1 +1,7 @@
-- This is a small library that implements the time counter functionality of a music player. Once we have created the play_head we can play, pause,stop etc. At any given time we get the current time using time fn
+
+# PlayHead
+
+> PlayHead is a very simple and small **counter** utility with *play* , *pause* and *stop* function. At any give time the lapsed time can be obtained from *time* function. 
+
+- It has no dependencies.
+- The lapsed time is returned in milli seconds.
