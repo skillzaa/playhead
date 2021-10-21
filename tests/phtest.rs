@@ -1,7 +1,7 @@
 use playhead::PlayHead;
 #[test]
 fn start(){
-    let ph:PlayHead = PlayHead::new();;
+    let ph:PlayHead = PlayHead::new();
     let rt = ph.time();
     assert_eq!(rt,0);
 }

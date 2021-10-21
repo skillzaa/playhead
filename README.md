@@ -5,3 +5,5 @@
 
 - It has no dependencies.
 - The lapsed time is returned in milli seconds.
+
+# Usage
