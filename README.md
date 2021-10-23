@@ -8,3 +8,22 @@
 - The lapsed time is returned in milli seconds.
 
 # Usage
+Please see the documentation for further details but in brief:
+
+## To create a new Timer 
+##### the name of the timer is called play head 
+> let playhead  = PlayHead::new();
+---
+## To Start 
+> playhead.start();
+---
+## To Stop 
+> playhead.stop();
+---
+## To Pause 
+> playhead.pause();
+---
+## To check the lapsed Time 
+> playhead.time();
+
+
