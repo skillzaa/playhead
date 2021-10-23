@@ -1,7 +1,7 @@
 use std::time::Instant;
 #[derive(Debug)]
 
-/// This is is one and the only struct we need and have.
+/// This is one and the only struct we need and have.
 /// We do not need to make any of its members public.
 pub struct PlayHead {
     old_time:u128,
@@ -10,8 +10,8 @@ pub struct PlayHead {
 }
 
 impl PlayHead {
+    /// The new counter must start paused since "first play" or any "play after pause" is the same.
     pub fn new()->Self{
-        ///it must start paused since "first play" or any "play after pause" is the same.
         PlayHead  { 
             paused:true, 
             old_time: 0,
@@ -31,6 +31,7 @@ impl PlayHead {
         }      
         true
     }
+    /// This function will just return the time lapsed in milli seconds. if the counter is in paused state then this value will not change.
     pub fn time(&self)->u128{ 
         if self.paused == false{
             self.time_lapsed.elapsed().as_millis() + self.old_time                    
@@ -50,6 +51,7 @@ impl PlayHead {
         }
            true   
     }
+    /// The stop function will reset the counter and bring it back to starting state.
     pub fn stop(&mut self)->bool{
         self.paused = true;
         self.old_time = 0;
