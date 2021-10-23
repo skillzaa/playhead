@@ -8,7 +8,7 @@
 - The lapsed time is returned in milli seconds.
 
 # Usage
-Please see the documentation for further details but in brief:
+Please see the [documentation](https://docs.rs/playhead/) for further details but in brief:
 
 ## To create a new Timer 
 ##### the name of the timer is called play head 

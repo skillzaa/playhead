@@ -1,11 +1,13 @@
 [package]
 name = "playhead"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["bilal <skillzaa.com@gmail.com>"]
 edition = "2018"
 description = "A small and simple counter utility"
 repository = "https://github.com/skillzaa/playhead.git"
 homepage = "https://github.com/skillzaa/playhead.git"
+
+documentation = "https://docs.rs/playhead/"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 
